@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Style1.css">
+    <nav class="nav">
+        <ul>
+            <li>Exercice S4</li>
+            <li class="drop">Formulaire
+                <ul>
+                    <li><a href="Formulaire%201.html">Formulaire 1</a></li>
+                    <li><a href="Formulaire%202.html">Formulaire 2</a></li>
+
+                </ul>
+
+            </li>
+        </ul>
+
+    </nav>
+</head>
+
+
+<body>
+<section class="form">
+
+    <form method="POST">
+        <h1> Formulaire de paiement</h1>
+        <section class="contact">
+            <fieldset class="fieldcontact">
+                <legend class="l">Informations du contact</legend>
+                <label class="a" for="nom">Nom: </label>
+                <input type="text" id="nom">
+
+                <label  class="a" for="courriel">Courriel: </label>
+                <input type="email" name="courriel" id="courriel">
+
+                <label class="a" for="province" id="province">Province: </label>
+                <select>
+                    <option selected> Québec</option>
+                    <option> Ontario</option>
+                    <option> Manitoba</option>
+                </select>
+
+            </fieldset>
+        </section>
+        <section class="paiement">
+
+            <fieldset class="fieldpaiement">
+                <legend>Informations de paiement</legend>
+
+                <ul class="paiement">
+                    <li class="b">
+                        Méthode de paiement:
+                    </li>
+                    <li class="b">
+                        <label  for="visa">Visa</label>
+                        <input type="radio" name="visa" id="visa">
+                    </li>
+                    <li class="b">
+                        <label  for="mastercard">MasterCard</label>
+                        <input type="radio" name="mastercard" id="mastercard">
+                    </li>
+                    <li class="b">
+                        <label  for="amex">American Express</label>
+                        <input type="radio" name="amex" id="amex">
+                    </li>
+                </ul>
+                <label class="c" for="numero">Numéro:</label>
+                <input type="text" name="numero" id="numero">
+
+            </fieldset>
+        </section>
+            <section class="livraison">
+                <fieldset class="fieldlivraison">
+                    <legend>Information de livraison</legend>
+                    <label class="d" for="signature">Signature requise </label>
+                    <input type="checkbox" id="signature">
+
+                    <label class="d" for="livraison">Livrer à la même adresse que l'adresse de paiement </label>
+                    <input type="checkbox" name="livraison" id="livraison">
+
+                </fieldset>
+            </section>
+
+
+        <section class="button">
+            <button type="submit"> Envoyer </button>
+            <button type="reset"> Annuler </button>
+        </section>
+
+    </form>
+
+</section>
+
+
+</body>
+</html>

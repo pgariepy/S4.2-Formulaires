@@ -1,0 +1,102 @@
+/** Bar de naviguation**/
+.nav{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: darkgray;
+
+}
+.nav li {
+    display: inline;
+    color: black;
+    margin: 1em;
+    background-color: #a9a9a9;
+    float: left;
+    text-align: center;
+
+}
+
+.nav li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+
+}
+/** Onglet déroulante **/
+.nav ul li ul{
+    display: none;
+}
+.nav ul li:hover ul{
+    display: block;
+
+}
+.nav ul li:hover li{
+    float: none;
+}
+
+
+/** Formulaire **/
+form{
+    margin: 2em;
+    position: absolute;
+}
+
+
+/** Premiere boite **/
+.contact{
+    position: relative;
+
+}
+
+.fieldcontact{
+    margin-bottom: 2em;
+}
+
+.a{
+    display: block;
+    margin: 0.5em;
+}
+
+/**Deuxieme boite **/
+.paiement{
+
+    position: relative;
+}
+
+.fieldpaiement{
+    margin-bottom: 2em;
+}
+.b{
+    display: inline;
+    margin: 0.5em;
+}
+.c{
+    margin: 0.5em;
+
+}
+
+.livraison{
+
+}
+
+
+/** Boutons **/
+button{
+    position: relative;
+    display: inline-block;
+    margin: 0.5em;
+    left: 14em;
+    padding: 1em 1em;
+}
+button:hover{
+    background-color: darkgrey;
+}
+input:valid{
+    color:green;
+}
+input:invalid{
+    color:red;
+}

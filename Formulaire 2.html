@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Style2.css">
+    <nav class="nav">
+        <ul>
+            <li>Exercice S4</li>
+            <li class="drop">Formulaire
+                <ul>
+                    <li><a href="Formulaire%201.html">Formulaire 1</a></li>
+                    <li><a href="Formulaire%202.html">Formulaire 2</a></li>
+
+                </ul>
+
+            </li>
+        </ul>
+
+    </nav>
+</head>
+
+<body>
+<form method="POST">
+    <section class="form2">
+        <h1> Formulaire de paiement</h1>
+        <section class="contact2">
+            <fieldset class="fieldcontact2">
+                <legend>Informations de contact</legend>
+                <label class="a" for="nom">Nom <sup>*</sup>: </label>
+                <input type="text" id="nom" required>
+
+                <label  class="a" for="courriel">Courriel: </label>
+                <input placeholder="courriel@exemple.com" type="email" name="courriel" id="courriel">
+
+                <label  class="a" for="cie">Compagnie: </label>
+                <input type="email" name="cie" id="cie"><br>
+
+                <label  class="a" for="tel" >Téléphone: </label>
+                <input placeholder="(555) 555-5555" type="email" name="tel" id="tel">
+
+
+                <label class="a" for="province" id="province">Province: </label>
+                <select>
+                    <option selected> Québec</option>
+                    <option> Ontario</option>
+                    <option> Manitoba</option>
+                </select>
+
+            </fieldset>
+
+        </section>
+        <section class="commande">
+            <fieldset class="fieldcommande">
+                <legend>Informations sur la commande</legend>
+                <label for="pomme"> Pommes:
+                    <input type="number" id="pomme" name="pomme" min="2" max="12"> <br>
+                </label>
+                <label for="patate"> Patate:
+                    <input type="range" id="patate" name="patate" step="5" max="20" min="5">
+
+                </label>
+
+
+            </fieldset>
+        </section>
+        <section class="commentaire">
+            <fieldset class="fieldcommentaire">
+                <legend>Vos commentaires</legend>
+                <label for="pseudo"> Pseudonyme (3-9 caractères):</label>
+                    <input type="text" minlength="3" maxlength="9" name="pseudo" id="pseudo"> <br>
+                    <p class="erreur">Veuillez inscrire un pseudonyme entre 3 et 9 caractères</p>
+                <label for="commentaire"> Commentaires: </label> <br>
+                <textarea  rows="1" cols="35" id="commentaire" name="commentaire" ></textarea>
+            </fieldset>
+
+        </section>
+
+        <section class="button2">
+            <button type="submit"> Envoyer </button>
+             <button type="reset"> Annuler </button>
+        </section>
+    </section>
+
+</form>
+</body>
+</html>

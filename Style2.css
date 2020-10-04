@@ -1,0 +1,91 @@
+/** Bar de naviguation**/
+.nav{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: darkgray;
+
+}
+.nav li {
+    display: inline;
+    color: black;
+    margin: 1em;
+    background-color: #a9a9a9;
+    float: left;
+    text-align: center;
+
+}
+
+.nav li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+
+}
+/** Onglet déroulante **/
+.nav ul li ul{
+    display: none;
+}
+.nav ul li:hover ul{
+    display: block;
+
+}
+.nav ul li:hover li{
+    float: none;
+    padding: 5em 5em;
+}
+
+
+.form2{
+    position: absolute;
+    margin: 2em;
+}
+
+
+.contact2{
+    margin: 2em;
+
+}
+.fieldcontact2 label{
+    display: block;
+
+}
+.commande{
+    margin: 2em;
+
+}
+.fieldcommande label{
+    display: block;
+    padding: 1em;
+}
+.commentaire{
+    margin: 2em;
+
+}
+.fieldcommentaire{
+    display: block;
+    padding: 1em;
+}
+
+button{
+    position: relative;
+    margin: 0.5em;
+    display: inline-block;
+    padding: 0.5em 5em;
+    left: 2em;
+}
+.erreur{
+    display: none;
+}
+
+input:invalid{
+    color:red;
+}
+input:invalid + p.erreur{
+    display: initial;
+    border: solid red;
+}
+
